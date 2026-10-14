@@ -1,15 +1,76 @@
-var data1=`
-A Material Description Plant Storage Location Base Unit of Measure Unrestricted Blocked Transit and Transfer Material Group Name 1 Material Type Descr. of Storage Loc. DF stor. loc. level In Quality Insp. Restricted-Use Stock Returns Valuated Goods Receipt Blocked Stock Tied Empties Stock in Transit In Transfer (Plant)
-122712 HARU SIDE TABLE - COLUMBIA 1180 1010 PC 34.000 0.000 0.000 001800409 Cainta Warehouse HAWA Central WHSE 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-122712 HARU SIDE TABLE - COLUMBIA 1662 1010 PC 52.000 0.000 0.000 001800409 Alaminos TG Warehouse HAWA Central WHSE 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-122712 HARU SIDE TABLE - COLUMBIA 1710 1022 PC 1.000 0.000 0.000 001800409 Pallocan Batangas Showroom HAWA Selling Area 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-122712 HARU SIDE TABLE - COLUMBIA 1710 1030 PC 7.000 0.000 0.000 001800409 Pallocan Batangas Showroom HAWA Bodega 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-131345 HARU SIDE TABLE - SUMMER OAK 1710 1022 PC 1.000 0.000 0.000 001800409 Pallocan Batangas Showroom HAWA Selling Area 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-112192 MURPHY HOMETHEATER - STEAM 1180 1010 SET 1 0.000 0.000 001700364 Cainta Warehouse HAWA Central WHSE 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-112192 MURPHY HOMETHEATER - STEAM 1662 1010 SET 5 0.000 0.000 001700364 Alaminos TG Warehouse HAWA Central WHSE 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-112192 MURPHY HOMETHEATER - STEAM 1710 1022 SET 2 0.000 0.000 001700364 Pallocan Batangas Showroom HAWA Selling Area 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-112192 MURPHY HOMETHEATER - STEAM 1710 1030 SET 2 0.000 0.000 001700364 Pallocan Batangas Showroom HAWA Bodega 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-112193 MURPHY HOMETHEATER - ANTELOPE 1180 1010 SET 20 0.000 0.000 001700364 Cainta Warehouse HAWA Central WHSE 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-112193 MURPHY HOMETHEATER - ANTELOPE 1662 1010 SET 6 0.000 0.000 001700364 Alaminos TG Warehouse HAWA Central WHSE 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-112193 MURPHY HOMETHEATER - ANTELOPE 1710 1022 SET 1 0.000 0.000 001700364 Pallocan Batangas Showroom HAWA Selling Area 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-112193 MURPHY HOMETHEATER - ANTELOPE 1710 1030 SET 3 0.000 0.000 001700364 Pallocan Batangas Showroom HAWA Bodega 0.000 0.000 0.000 0.000 0.000 0.000 0.000`
+<script>
+
+
+
+dat2= data1.split("\n")
+dat3=""
+dat5=""
+dat41=""
+function searching(){
+for(i=0;i<dat2.length;i++){
+        
+     if( dat2[i].includes(searchbox.value.toUpperCase())){
+          dat3=dat3+"\n\n"+dat2[i]
+         
+          
+          if (dat2[i].includes("1710 1022")){
+          dat4=dat2[i].split("1710 1022")
+               dat33=dat4[1].split(" ")[2]
+                    dat331=dat4[1].split(" ")[6]
+            dat41=dat4[0]+"\n\n"+dat331+"\n\n"+dat33+"\n\n\n\n"+dat41
+           }
+               if (dat2[i].includes("1710 1030")){
+          dat4=dat2[i].split("1710 1030")
+               dat33=dat4[1].split(" ")[2]
+                    dat331=dat4[1].split(" ")[6]
+            dat41=dat4[0]+"\n\n"+dat331+"\n\n"+dat33+"\n\n\n\n"+dat41
+  
+          }
+          
+               if (dat2[i].includes("1662 1010")){
+          dat4=dat2[i].split("1662 1010")
+               dat33=dat4[1].split(" ")[2]
+                    dat331=dat4[1].split(" ")[6]
+            dat41=dat4[0]+"\n\n"+dat331+"\n\n"+dat33+"\n\n\n\n"+dat41
+  
+          }
+               if (dat2[i].includes("1180 1010")){
+          dat4=dat2[i].split("1180 1010")
+               dat33=dat4[1].split(" ")[2]
+                    dat331=dat4[1].split(" ")[6]
+            dat41=dat4[0]+"\n\n"+dat331+"\n\n"+dat33+"\n\n\n\n"+dat41
+  
+          }
+             
+             
+   
+       //   dat41=dat4[1].split(searchbox.value)
+     //    dat5=dat5+"n\n"+dat41[1]
+     }else{
+       
+     }
+}
+}
+
+
+
+
+function search(){
+searching()
+//alert(dat3)
+dat3=""
+//alert(dat5)
+dat5=""
+      
+          alert(dat41)
+          dat41=""
+}
+   function alaminos(){
+    now= new Date()
+    now.setDate(now.getDate()+3)
+    alert(now.getDay())
+  
+ 
+    }
+    
+    </script>
