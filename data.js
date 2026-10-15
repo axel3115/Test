@@ -68,4 +68,4 @@ dat5=""
   
  
     }
-    alert("ready")
+    alert("ready12")
