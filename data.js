@@ -1,7 +1,3 @@
-<script>
-
-
-
 dat2= data1.split("\n")
 dat3=""
 dat5=""
@@ -72,5 +68,4 @@ dat5=""
   
  
     }
-    
-    </script>
+    alert("ready")
