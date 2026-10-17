@@ -15,13 +15,13 @@ for(i=0;i<dat2.length;i++){
           dat4=dat2[i].split("1710 1022")
                dat33=dat4[1].split(" ")[2]
                     dat331=dat4[1].split(" ")[6]
-            dat41=dat4[0]+"<br><br>"+dat331+"<br>"+dat33+" Pcs<br><br><br><br>"+dat41
+            dat41=dat4[0]+"<br>"+dat331+" Show Room<br>"+dat33+" Pcs<br><br><br><br>"+dat41
            }
                if (dat2[i].includes("1710 1030")){
           dat4=dat2[i].split("1710 1030")
                dat33=dat4[1].split(" ")[2]
                     dat331=dat4[1].split(" ")[6]
-            dat41=dat4[0]+"<br><br>"+dat331+"<br>"+dat33+" Pcs <br><br><br><br>"+dat41
+            dat41=dat4[0]+"<br>"+dat331+" Warehouse <br>"+dat33+" Pcs <br><br><br><br>"+dat41
   
           }
           
@@ -31,7 +31,7 @@ for(i=0;i<dat2.length;i++){
                     dat331=dat4[1].split(" ")[6]
     
                
-            dat41=dat4[0]+"<br><br>"+dat331+"<br>"+dat33+" Pcs<br>TG LeadTime "+adate+"<br><br><br><br>"+dat41
+            dat41=dat4[0]+"<br>"+dat331+"<br>"+dat33+" Pcs<br>TG LeadTime "+adate+"<br><br><br><br>"+dat41
   
           }
                if (dat2[i].includes("1180 1010")){
@@ -40,7 +40,7 @@ for(i=0;i<dat2.length;i++){
                     dat331=dat4[1].split(" ")[6]
             
                
-            dat41=dat4[0]+"<br><br>"+dat331+"<br>"+dat33+" Pcs <br>TG Lead Time "+cdate+"<br><br><br><br>"+dat41
+            dat41=dat4[0]+"<br>"+dat331+"<br>"+dat33+" Pcs <br>TG Lead Time "+cdate+"<br><br><br><br>"+dat41
     
           }
              
@@ -64,7 +64,7 @@ function caintaDate(){
      
                       }  
                         if(cday==1){
-                         now1.setDate(now1.getDate()+3)
+                         now1.setDate(now1.getDate()+1)
                                      cdate=now1.getMonth()+"/"+now1.getDate()+"/"+now1.getFullYear()
      
                       }  
@@ -74,7 +74,7 @@ function caintaDate(){
      
                        }  
                               if(cday==3){
-                         now1.setDate(now1.getDate()+4)
+                         now1.setDate(now1.getDate()+1)
                                       cdate=now1.getMonth()+"/"+now1.getDate()+"/"+now1.getFullYear()
      
                       }  
@@ -90,7 +90,7 @@ function caintaDate(){
      
                       }  
                              if(cday==6){
-                         now1.setDate(now1.getDate()+3)
+                         now1.setDate(now1.getDate()+1)
                           cdate=now1.getMonth()+"/"+now1.getDate()+"/"+now1.getFullYear()
                       }  
                       
@@ -110,7 +110,7 @@ function alaminosDate(){
                           adate=now.getMonth()+"/"+now.getDate()+"/"+now.getFullYear()
                       }  
                         if(aday==1){
-                         now.setDate(now.getDate()+3)
+                         now.setDate(now.getDate()+1)
                   adate=now.getMonth()+"/"+now.getDate()+"/"+now.getFullYear()
                       }  
                            if(aday==2){
@@ -119,7 +119,7 @@ function alaminosDate(){
 
                        }  
                               if(aday==3){
-                         now.setDate(now.getDate()+4)
+                         now.setDate(now.getDate()+1)
                          adate=now.getMonth()+"/"+now.getDate()+"/"+now.getFullYear()
 
                       }  
@@ -135,7 +135,7 @@ function alaminosDate(){
 
                       }  
                              if(aday==6){
-                         now.setDate(now.getDate()+3)
+                         now.setDate(now.getDate()+1)
                           adate=now.getMonth()+"/"+now.getDate()+"/"+now.getFullYear()
 
                       }  
@@ -146,7 +146,7 @@ function alaminosDate(){
                
 }
 function search(){
-
+//window.open("http://www.google.com")
 caintaDate()
 alaminosDate()
 searching()
@@ -156,6 +156,8 @@ dat3=""
 dat5=""
           bodydata.innerHTML=""
          bodydata.innerHTML=dat41
-        dat41=""
+         dat41=""
         searchbox.value=""
 }
+
+alert("upadate")
