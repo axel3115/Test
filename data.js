@@ -154,10 +154,10 @@ searching()
 dat3=""
 //alert(dat5)
 dat5=""
-          bodydata.innerHTML=""
+         bodydata.innerHTML=""
          bodydata.innerHTML=dat41
          dat41=""
-        searchbox.value=""
+         searchbox.value=""
 }
 
 alert("upadate")
