@@ -1,15 +1,28 @@
+
 dat2= data1.split("\n")
 dat3=""
 dat5=""
 dat41=""
 cdate=""
 adate=""
+notes1=["HARU","MURPHY"]
+notemessage=["wag ibenya hau","Paldogs"]
 function searching(){
 for(i=0;i<dat2.length;i++){
         
      if( dat2[i].includes(searchbox.value.toUpperCase())){
           dat3=dat3+"<br><br>"+dat2[i]
-         
+
+            if(dat2[i].includes(notes1[0])){
+            
+            notes.innerHTML=notemessage[0]
+              
+              }
+                    if(dat2[i].includes(notes1[1])){
+            
+            notes.innerHTML=notemessage[1]
+              
+              }
           
           if (dat2[i].includes("1710 1022")){
           dat4=dat2[i].split("1710 1022")
@@ -145,18 +158,24 @@ function alaminosDate(){
                       
                
 }
+
+function getPrice(){
+//window.open("https://mandauefoam.ph/search?q=112193&type=product")
+
+}
 function search(){
+getPrice()
 //window.open("http://www.google.com")
 caintaDate()
 alaminosDate()
 searching()
-//alert(dat3)
 dat3=""
 //alert(dat5)
 dat5=""
-         bodydata.innerHTML=""
+          bodydata.innerHTML=""
          bodydata.innerHTML=dat41
          dat41=""
-         searchbox.value=""
-alert("upadate")
+        searchbox.value=""
 }
+
+alert("upadate")
