@@ -5,8 +5,8 @@ dat5=""
 dat41=""
 cdate=""
 adate=""
-notes1=["HARU","MURPHY"]
-notemessage=["wag ibenya hau","Paldogs"]
+notes1=["MURPHY"]
+notemessage=["Paldogs"]
 function searching(){
 for(i=0;i<dat2.length;i++){
         
@@ -14,9 +14,8 @@ for(i=0;i<dat2.length;i++){
           dat3=dat3+"<br><br>"+dat2[i]
 
             if(dat2[i].includes(notes1[0])){
-            
-            notes.innerHTML=notemessage[0]
-              
+                   notes.innerHTML=notemessage[0]
+                
               }
                     if(dat2[i].includes(notes1[1])){
             
@@ -73,38 +72,38 @@ function caintaDate(){
                     cday=now1.getDay()
                     if(cday==0){
                          now1.setDate(now1.getDate()+2)
-                                      cdate=now1.getMonth()+"/"+now1.getDate()+"/"+now1.getFullYear()
+                                      cdate=now1.getMonth()+1+"/"+now1.getDate()+"/"+now1.getFullYear()
      
                       }  
                         if(cday==1){
                          now1.setDate(now1.getDate()+1)
-                                     cdate=now1.getMonth()+"/"+now1.getDate()+"/"+now1.getFullYear()
+                                     cdate=now1.getMonth()+1+"/"+now1.getDate()+"/"+now1.getFullYear()
      
                       }  
                            if(cday==2){
                          now1.setDate(now1.getDate()+2)
-                                       cdate=now1.getMonth()+"/"+now1.getDate()+"/"+now1.getFullYear()
+                                       cdate=now1.getMonth()+1+"/"+now1.getDate()+"/"+now1.getFullYear()
      
                        }  
                               if(cday==3){
                          now1.setDate(now1.getDate()+1)
-                                      cdate=now1.getMonth()+"/"+now1.getDate()+"/"+now1.getFullYear()
+                                      cdate=now1.getMonth()+1+"/"+now1.getDate()+"/"+now1.getFullYear()
      
                       }  
                       
                              if(cday==4){
                          now1.setDate(now1.getDate()+3)
-                                 cdate=now1.getMonth()+"/"+now1.getDate()+"/"+now1.getFullYear()
+                                 cdate=now1.getMonth()+1+"/"+now1.getDate()+"/"+now1.getFullYear()
      
                       }  
                              if(cday==5){
                          now1.setDate(now1.getDate()+2)
-                        cdate=now1.getMonth()+"/"+now1.getDate()+"/"+now1.getFullYear()
+                        cdate=now1.getMonth()+1+"/"+now1.getDate()+"/"+now1.getFullYear()
      
                       }  
                              if(cday==6){
                          now1.setDate(now1.getDate()+1)
-                          cdate=now1.getMonth()+"/"+now1.getDate()+"/"+now1.getFullYear()
+                          cdate=now1.getMonth()+1+"/"+now1.getDate()+"/"+now1.getFullYear()
                       }  
                       
                     
@@ -120,36 +119,36 @@ function alaminosDate(){
                     aday=now.getDay()
                     if(aday==0){
                          now.setDate(now.getDate()+2)
-                          adate=now.getMonth()+"/"+now.getDate()+"/"+now.getFullYear()
+                          adate=now.getMonth()+1+"/"+now.getDate()+"/"+now.getFullYear()
                       }  
                         if(aday==1){
                          now.setDate(now.getDate()+1)
-                  adate=now.getMonth()+"/"+now.getDate()+"/"+now.getFullYear()
+                  adate=now.getMonth()+1+"/"+now.getDate()+"/"+now.getFullYear()
                       }  
                            if(aday==2){
                          now.setDate(now.getDate()+2)
-                     adate=now.getMonth()+"/"+now.getDate()+"/"+now.getFullYear()
+                     adate=now.getMonth()+1+"/"+now.getDate()+"/"+now.getFullYear()
 
                        }  
                               if(aday==3){
                          now.setDate(now.getDate()+1)
-                         adate=now.getMonth()+"/"+now.getDate()+"/"+now.getFullYear()
+                         adate=now.getMonth()+1+"/"+now.getDate()+"/"+now.getFullYear()
 
                       }  
                       
                              if(aday==4){
                          now.setDate(now.getDate()+3)
-                          adate=now.getMonth()+"/"+now.getDate()+"/"+now.getFullYear()
+                          adate=now.getMonth()+1+"/"+now.getDate()+"/"+now.getFullYear()
 
                       }  
                              if(aday==5){
                          now.setDate(now.getDate()+2)
-                           adate=now.getMonth()+"/"+now.getDate()+"/"+now.getFullYear()
+                           adate=now.getMonth()+1+"/"+now.getDate()+"/"+now.getFullYear()
 
                       }  
                              if(aday==6){
                          now.setDate(now.getDate()+1)
-                          adate=now.getMonth()+"/"+now.getDate()+"/"+now.getFullYear()
+                          adate=now.getMonth()+1+"/"+now.getDate()+"/"+now.getFullYear()
 
                       }  
                       
@@ -163,7 +162,9 @@ function getPrice(){
 //window.open("https://mandauefoam.ph/search?q=112193&type=product")
 
 }
+notes.innerHTML="Update Price <br><br>10/22/26"
 function search(){
+notes.innerHTML="Update Price <br><br>10/22/26"
 getPrice()
 //window.open("http://www.google.com")
 caintaDate()
@@ -176,6 +177,8 @@ dat5=""
          bodydata.innerHTML=dat41
          dat41=""
         searchbox.value=""
+        
 }
 
-alert("upadate")
+
+alert("upad1ate")
