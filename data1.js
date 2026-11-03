@@ -60,8 +60,6 @@ button{
 </style>
    </body>
     <script src="Html/data.js"></script>
-      <script src="https://cdn.jsdelivr.net/gh/axel3115/Test@main/data.js"></script>
-
-
+   
 
 </html>
