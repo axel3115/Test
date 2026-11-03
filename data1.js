@@ -38,6 +38,7 @@ input{
    border-radius:5px;
    padding:5px;
   box-shadow:2px 2px 10px #ccc;
+  width:70%;
 }
 button{
     background-color:#5cccfc;
@@ -46,7 +47,7 @@ button{
     padding:5px;
     margin-left:5px;
     box-shadow:2px 2px 10px #ccc;
-    width:30%;
+    width:20%;
 }
 
 #notes{
@@ -60,6 +61,3 @@ button{
 </style>
    </body>
     <script src="Html/data.js"></script>
-   
-
-</html>
