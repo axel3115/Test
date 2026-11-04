@@ -9,8 +9,8 @@
      <input id="searchbox"></input>
      <button onClick="search()">Search</button><br><br>
      <div id="bdata">
-     <div id="bodydata"></div>
-    <div id="notes"></div>
+     <text id="bodydata"></text>
+     <text id="notes"></text>
     
     </div>      
 
@@ -60,4 +60,4 @@ button{
  }
 </style>
    </body>
-    <script src="Html/data.js"></script>
+ </html>
