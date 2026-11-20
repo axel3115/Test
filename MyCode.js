@@ -1,0 +1,185 @@
+
+dat2= data1.split("\n")
+dat3=""
+dat5=""
+dat41=""
+cdate=""
+adate=""
+dat331=""
+notes1=["MURPHY"]
+notemessage=["Paldogs"]
+function searching(){
+for(i=0;i<dat2.length;i++){
+        
+     if( dat2[i].includes(searchbox.value.toUpperCase())){
+          dat3=dat3+"<br><br>"+dat2[i]
+
+            if(dat2[i].includes(notes1[0])){
+                   notes.innerHTML=notemessage[0]
+                
+              }
+                    if(dat2[i].includes(notes1[1])){
+            
+            notes.innerHTML=notemessage[1]
+              
+              }
+         
+          if (dat2[i].includes("1710 1022")){
+          dat4=dat2[i].split("1710 1022")
+               dat33=dat4[1].split(" ")[2]
+                   
+            dat41=dat4[0]+"<br>"+"Batangas"+" Show Room<br>"+dat33+" Pcs<br><br><br><br>"+dat41
+           }
+               if (dat2[i].includes("1710 1030")){
+          dat4=dat2[i].split("1710 1030")
+               dat33=dat4[1].split(" ")[2]
+                  
+            dat41=dat4[0]+"<br>"+"Batangas"+" Warehouse <br>"+dat33+" Pcs <br><br><br><br>"+dat41
+  
+          }
+          
+               if (dat2[i].includes("1662 1010")){
+          dat4=dat2[i].split("1662 1010")
+               dat33=dat4[1].split(" ")[2]
+                    
+    
+               
+            dat41=dat4[0]+"<br>"+"Alaminos"+"<br>"+dat33+" Pcs<br>TG LeadTime "+adate+"<br><br><br><br>"+dat41
+  
+          }
+               if (dat2[i].includes("1180 1010")){
+          dat4=dat2[i].split("1180 1010")
+               dat33=dat4[1].split(" ")[2]
+                
+            
+               
+            dat41=dat4[0]+"<br>"+"Cainta"+"<br>"+dat33+" Pcs <br>TG Lead Time "+cdate+"<br><br><br><br>"+dat41
+    
+          }
+             
+             
+   
+       //   dat41=dat4[1].split(searchbox.value)
+     //    dat5=dat5+"n<br>"+dat41[1]
+     }else{
+}
+}
+}
+cday=""
+function caintaDate(){
+
+                   now1= new Date()
+                    now1.setDate(now1.getDate()+9)
+                    cday=now1.getDay()
+                    if(cday==0){
+                         now1.setDate(now1.getDate()+2)
+                                      cdate=now1.getMonth()+1+"/"+now1.getDate()+"/"+now1.getFullYear()
+     
+                      }  
+                        if(cday==1){
+                         now1.setDate(now1.getDate()+1)
+                                     cdate=now1.getMonth()+1+"/"+now1.getDate()+"/"+now1.getFullYear()
+     
+                      }  
+                           if(cday==2){
+                         now1.setDate(now1.getDate()+2)
+                                       cdate=now1.getMonth()+1+"/"+now1.getDate()+"/"+now1.getFullYear()
+     
+                       }  
+                              if(cday==3){
+                         now1.setDate(now1.getDate()+1)
+                                      cdate=now1.getMonth()+1+"/"+now1.getDate()+"/"+now1.getFullYear()
+     
+                      }  
+                      
+                             if(cday==4){
+                         now1.setDate(now1.getDate()+3)
+                                 cdate=now1.getMonth()+1+"/"+now1.getDate()+"/"+now1.getFullYear()
+     
+                      }  
+                             if(cday==5){
+                         now1.setDate(now1.getDate()+2)
+                        cdate=now1.getMonth()+1+"/"+now1.getDate()+"/"+now1.getFullYear()
+     
+                      }  
+                             if(cday==6){
+                         now1.setDate(now1.getDate()+1)
+                          cdate=now1.getMonth()+1+"/"+now1.getDate()+"/"+now1.getFullYear()
+                      }  
+                      
+                    
+                    
+                    
+       
+}
+aday=""
+function alaminosDate(){
+
+                  now= new Date()
+                    now.setDate(now.getDate()+4)
+                    aday=now.getDay()
+                    if(aday==0){
+                         now.setDate(now.getDate()+2)
+                          adate=now.getMonth()+1+"/"+now.getDate()+"/"+now.getFullYear()
+                      }  
+                        if(aday==1){
+                         now.setDate(now.getDate()+1)
+                  adate=now.getMonth()+1+"/"+now.getDate()+"/"+now.getFullYear()
+                      }  
+                           if(aday==2){
+                         now.setDate(now.getDate()+2)
+                     adate=now.getMonth()+1+"/"+now.getDate()+"/"+now.getFullYear()
+
+                       }  
+                              if(aday==3){
+                         now.setDate(now.getDate()+1)
+                         adate=now.getMonth()+1+"/"+now.getDate()+"/"+now.getFullYear()
+
+                      }  
+                      
+                             if(aday==4){
+                         now.setDate(now.getDate()+3)
+                          adate=now.getMonth()+1+"/"+now.getDate()+"/"+now.getFullYear()
+
+                      }  
+                             if(aday==5){
+                         now.setDate(now.getDate()+2)
+                           adate=now.getMonth()+1+"/"+now.getDate()+"/"+now.getFullYear()
+
+                      }  
+                             if(aday==6){
+                         now.setDate(now.getDate()+1)
+                          adate=now.getMonth()+1+"/"+now.getDate()+"/"+now.getFullYear()
+
+                      }  
+                      
+                                              
+                    
+                      
+               
+}
+
+function getPrice(){
+//window.open("https://mandauefoam.ph/search?q=112193&type=product")
+
+}
+notes.innerHTML="Update Price <br><br>10/22/26"
+function search(){
+notes.innerHTML="Update Price <br><br>10/22/26"
+getPrice()
+//window.open("http://www.google.com")
+caintaDate()
+alaminosDate()
+searching()
+dat3=""
+//alert(dat5)
+dat5=""
+          bodydata.innerHTML=""
+         bodydata.innerHTML=dat41
+         dat41=""
+        searchbox.value=""
+        
+}
+
+
+alert("upa2date")
