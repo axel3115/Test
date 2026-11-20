@@ -5,6 +5,7 @@ dat5=""
 dat41=""
 cdate=""
 adate=""
+dat331=""
 notes1=["MURPHY"]
 notemessage=["Paldogs"]
 function searching(){
@@ -22,37 +23,37 @@ for(i=0;i<dat2.length;i++){
             notes.innerHTML=notemessage[1]
               
               }
-          
+         
           if (dat2[i].includes("1710 1022")){
           dat4=dat2[i].split("1710 1022")
                dat33=dat4[1].split(" ")[2]
-                    dat331=dat4[1].split(" ")[6]
-            dat41=dat4[0]+"<br>"+dat331+" Show Room<br>"+dat33+" Pcs<br><br><br><br>"+dat41
+                   
+            dat41=dat4[0]+"<br>"+"Batangas"+" Show Room<br>"+dat33+" Pcs<br><br><br><br>"+dat41
            }
                if (dat2[i].includes("1710 1030")){
           dat4=dat2[i].split("1710 1030")
                dat33=dat4[1].split(" ")[2]
-                    dat331=dat4[1].split(" ")[6]
-            dat41=dat4[0]+"<br>"+dat331+" Warehouse <br>"+dat33+" Pcs <br><br><br><br>"+dat41
+                  
+            dat41=dat4[0]+"<br>"+"Batangas"+" Warehouse <br>"+dat33+" Pcs <br><br><br><br>"+dat41
   
           }
           
                if (dat2[i].includes("1662 1010")){
           dat4=dat2[i].split("1662 1010")
                dat33=dat4[1].split(" ")[2]
-                    dat331=dat4[1].split(" ")[6]
+                    
     
                
-            dat41=dat4[0]+"<br>"+dat331+"<br>"+dat33+" Pcs<br>TG LeadTime "+adate+"<br><br><br><br>"+dat41
+            dat41=dat4[0]+"<br>"+"Alaminos"+"<br>"+dat33+" Pcs<br>TG LeadTime "+adate+"<br><br><br><br>"+dat41
   
           }
                if (dat2[i].includes("1180 1010")){
           dat4=dat2[i].split("1180 1010")
                dat33=dat4[1].split(" ")[2]
-                    dat331=dat4[1].split(" ")[6]
+                
             
                
-            dat41=dat4[0]+"<br>"+dat331+"<br>"+dat33+" Pcs <br>TG Lead Time "+cdate+"<br><br><br><br>"+dat41
+            dat41=dat4[0]+"<br>"+"Cainta"+"<br>"+dat33+" Pcs <br>TG Lead Time "+cdate+"<br><br><br><br>"+dat41
     
           }
              
