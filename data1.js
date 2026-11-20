@@ -2,7 +2,7 @@
 <html>
 <center>
  
-<body bgColor="white">
+<body bgColor="red">
 
 
 <h1> Helper </h1>
@@ -27,7 +27,7 @@
 #bodydata{
     overflow:scroll;
     text-align:left;
-    width:80%;
+    width:80vh;
       box-shadow:2px 2px 10px #ccc;
       padding:10px;
      
@@ -38,7 +38,7 @@ input{
    border-radius:5px;
    padding:5px;
   box-shadow:2px 2px 10px #ccc;
-  width:70%;
+  width:70vh;
 }
 button{
     background-color:#5cccfc;
