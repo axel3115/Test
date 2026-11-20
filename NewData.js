@@ -1,3 +1,5 @@
+alert("update 11/20/26")
+
 data1=`
 Material Material Description Plant Storage Location Base Unit of Measure Unrestricted Material Group Transit and Transfer Stock in Transit
 1291 MEGA PROFILE MATTRESS PAD 2X36X75 1710 1022 PC 1.000 002300651 0.000 0.000
