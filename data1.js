@@ -1,10 +1,9 @@
-
 <html>
 <center>
  
-<body bgColor="red">
 
 
+<div id="bbbb">
 <h1> Helper </h1>
      <input id="searchbox"></input>
      <button onClick="search()">Search</button><br><br>
@@ -20,7 +19,7 @@
   display:flex;
   flex-direction:row;
   overflow:scroll;
-  height:70%;
+  height:70vh;
     box-shadow:2px 2px 10px #ccc;
    
 }
@@ -38,8 +37,13 @@ input{
    border-radius:5px;
    padding:5px;
   box-shadow:2px 2px 10px #ccc;
-  width:70vh;
+  width:15vh;
+  height:3vh;
+  font-size:1vh;
 }
+  h1{
+    font-size:3vh; 
+  }
 button{
     background-color:#5cccfc;
     border:0;
@@ -47,17 +51,36 @@ button{
     padding:5px;
     margin-left:5px;
     box-shadow:2px 2px 10px #ccc;
-    width:20%;
+    width:10vh;
+    height:3vh;
+    font-size:1vh;
 }
 
 #notes{
    
      background-color:#ccc;
-     width:30%;
+     width:30vh;
      padding:15px;
        box-shadow:2px 2px 10px #ccc;
      
  }
+  #bbbb{
+   width:100%;
+    height:100%;
+    overflow:hidden;
+    position:fixed;
+    top:0;
+  }
+  iframe{
+   display:none; 
+  }
+  body{
+    position:fixed;
+    width:100%;
+    height:100%;
+  }
 </style>
-   </body>
- </html>
+  </div>
+
+
+</html>
